@@ -29,12 +29,16 @@ section {
   min-width: 10px;
   padding: 1rem 0;
   min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .col {
   min-width: 20px;
   min-height: 20px;
   margin: 10px;
+  flex-grow: 1;
 }
 
 .trolley-grey {
@@ -59,4 +63,16 @@ section {
 
 .olive {
   background: olive;
+}
+
+@media (min-width: 960px) and (max-width: 1399px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .row {
+    flex-direction: row;
+  }
 }
